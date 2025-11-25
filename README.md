@@ -2,29 +2,29 @@
 This project detects multiple objects in an image and automatically identifies the primary object, even when objects overlap or partially occlude one another. It uses YOLOv8 Segmentation for object detection and MediaPipe Face Detection for accurate prioritization when faces are present.
 
  Features
-✔ YOLOv8 Segmentation
+* YOLOv8 Segmentation
   Detects all objects
   Provides bounding boxes + segmentation masks
 
-✔ MediaPipe Face Detection
+* MediaPipe Face Detection
   Identifies faces with high accuracy
   Overrides YOLO decisions when a face is partially hidden or overlapped
 
-✔ Smart Primary Object Selection
+* Smart Primary Object Selection
   Scores objects using:
   Detection confidence
   Object category priority (face > person > animals > others)
   Object size
   Center position in the image
 
-✔ Handles Complex Scenarios
+* Handles Complex Scenarios
   Face covered by hand
   Multiple people
   Overlapping objects
   Misclassifications
   Partial occlusion
 
-✔ Smart Cropping
+* Smart Cropping
   Crops only the final selected object
   Optionally uses segmentation mask for cleaner cutouts
 
